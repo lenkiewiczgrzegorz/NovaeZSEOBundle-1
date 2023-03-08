@@ -13,9 +13,8 @@
 namespace Novactive\Bundle\eZSEOBundle\Core;
 
 use Exception;
-use Ibexa\Contracts\Core\Repository\URLWildcardService;
-use Ibexa\Core\MVC\Symfony\Routing\UrlAliasRouter;
-use Ibexa\Core\MVC\Symfony\Routing\UrlWildcardRouter as BaseUrlWildcardRouter;
+use eZ\Publish\API\Repository\URLWildcardService;
+use eZ\Publish\Core\MVC\Symfony\Routing\UrlWildcardRouter as BaseUrlWildcardRouter;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 
@@ -36,7 +35,7 @@ class UrlWildcardRouter extends BaseUrlWildcardRouter
             $urlWildcard = $this->wildcardService->translate($requestedPath);
 
             $params = [
-                '_route' => UrlAliasRouter::URL_ALIAS_ROUTE_NAME,
+                '_route' => 'ez_urlalias',
             ];
 
             if (0 === strpos($urlWildcard->uri, 'http://') || 'https://' === substr($urlWildcard->uri, 0, 8)) {

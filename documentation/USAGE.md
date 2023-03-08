@@ -43,9 +43,9 @@ nova_ezseo:
     system:
         default:
             default_metas:
-                author: "Ibexa Community Bundle Nova eZ SEO Bundle"
+                author: "eZ Community Bundle Nova eZ SEO Bundle"
                 copyright: ~
-                generator: "Ibexa Platform"
+                generator: "eZ Platform"
                 MSSmartTagsPreventParsing: "TRUE"
 ```
 
@@ -76,7 +76,7 @@ nova_ezseo:
                     title: 'RSS'
                     type: 'application/rss+xml'
                 'Other package asset':
-                    href: { asset: { path: 'images/favicon.ico', package: 'ibexa_design' } }
+                    href: { asset: { path: 'images/favicon.ico', package: 'ezdesign' } }
                     type: 'image/x-icon'
 ```
 

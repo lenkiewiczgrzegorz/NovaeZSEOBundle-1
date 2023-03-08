@@ -4,7 +4,6 @@
 
 ## Implemented
 
-* 7.x: Ibexa Platform 4.x
 * 5.x: eZ Platform 3.x
 * 4.x: eZ Platform 2.x clean and revamp, Redirect Manager
 * 3.x: Admin UI and double compatibility, bugfixes etc..

@@ -15,14 +15,13 @@ namespace Novactive\Bundle\eZSEOBundle\Controller;
 use DateTime;
 use DOMDocument;
 use DOMElement;
-use Ibexa\Bundle\Core\Controller;
-use Ibexa\Contracts\Core\Repository\Values\Content\Location;
-use Ibexa\Contracts\Core\Repository\Values\Content\Search\SearchHit;
-use Ibexa\Contracts\Core\Repository\Values\Content\Search\SearchResult;
-use Ibexa\Core\Helper\FieldHelper;
-use Ibexa\Core\MVC\Symfony\Routing\UrlAliasRouter;
-use Ibexa\Core\Repository\Values\Content\VersionInfo;
-use Ibexa\Contracts\Core\Variation\VariationHandler;
+use eZ\Bundle\EzPublishCoreBundle\Controller;
+use eZ\Publish\API\Repository\Values\Content\Location;
+use eZ\Publish\API\Repository\Values\Content\Search\SearchHit;
+use eZ\Publish\API\Repository\Values\Content\Search\SearchResult;
+use eZ\Publish\Core\Helper\FieldHelper;
+use eZ\Publish\Core\Repository\Values\Content\VersionInfo;
+use eZ\Publish\SPI\Variation\VariationHandler;
 use Novactive\Bundle\eZSEOBundle\Core\Sitemap\QueryFactory;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -127,7 +126,7 @@ class SitemapController extends Controller
             $location = $searchHit->valueObject;
             try {
                 $url = $this->generateUrl(
-                    UrlAliasRouter::URL_ALIAS_ROUTE_NAME,
+                    'ez_urlalias',
                     ['locationId' => $location->id],
                     UrlGeneratorInterface::ABSOLUTE_URL
                 );

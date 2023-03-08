@@ -12,7 +12,7 @@
 
 namespace Novactive\Bundle\eZSEOBundle\Core;
 
-use Ibexa\Contracts\Core\SiteAccess\ConfigResolverInterface;
+use eZ\Publish\Core\MVC\ConfigResolverInterface;
 use EzSystems\EzPlatformAdminUi\UI\Config\ProviderInterface;
 
 class SeoMetas implements ProviderInterface

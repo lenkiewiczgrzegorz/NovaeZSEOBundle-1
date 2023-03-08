@@ -12,7 +12,7 @@
 
 namespace Novactive\Bundle\eZSEOBundle\Core;
 
-use Ibexa\Contracts\Core\Repository\Values\Content\ContentInfo;
+use eZ\Publish\API\Repository\Values\Content\ContentInfo;
 
 interface CustomFallbackInterface
 {

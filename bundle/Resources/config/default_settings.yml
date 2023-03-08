@@ -23,9 +23,9 @@ parameters:
         subtrees: []
         contentTypeIdentifiers: []
     nova_ezseo.default.default_metas:
-        author: "Ibexa Community Bundle Nova eZ SEO Bundle"
+        author: "eZ Community Bundle Nova eZ SEO Bundle"
         copyright: ~
-        generator: "Ibexa Platform"
+        generator: "eZ Platform"
         MSSmartTagsPreventParsing: "TRUE"
     nova_ezseo.default.default_links:
         Index:

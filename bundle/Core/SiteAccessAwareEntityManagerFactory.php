@@ -13,14 +13,14 @@
 namespace Novactive\Bundle\eZSEOBundle\Core;
 
 use Doctrine\Bundle\DoctrineBundle\Mapping\ContainerEntityListenerResolver;
+use Symfony\Component\Cache\Adapter\ArrayAdapter;
 use Doctrine\Common\Cache\Psr6\DoctrineProvider;
 use Doctrine\ORM\Configuration;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\Mapping\UnderscoreNamingStrategy;
 use Doctrine\Persistence\ManagerRegistry as Registry;
-use Ibexa\Bundle\Core\ApiLoader\RepositoryConfigurationProvider;
-use Symfony\Component\Cache\Adapter\ArrayAdapter;
+use eZ\Bundle\EzPublishCoreBundle\ApiLoader\RepositoryConfigurationProvider;
 
 class SiteAccessAwareEntityManagerFactory
 {
